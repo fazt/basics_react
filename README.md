@@ -6,6 +6,7 @@
 - necesario saber configurar babel
 - necesario saber JSX
 - necesario saber es6
+- destructuring
 
 ## Relacionados
 - javascript libraries and frameworks
@@ -19,7 +20,10 @@
   - todas las etiquetas de ser autocerradas
 ## Consideracioens
 - los componentes en REACT deben empezar con MAYUSCULAS, para diferenciarse de ETIQUESTAS HTML
-- previene ataques XSS por defecto 
+- previene ataques XSS por defecto
+- un componente no debe mutar us propiedades
+- es mejor evitar duplicar el estado en las propiedades
+- es mejor evitar los estados de los componentes en la medida de lo posible
 
 props
 states
