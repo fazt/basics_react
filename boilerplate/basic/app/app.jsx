@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {render} from 'react-dom';
 
-var Greeter = require('Greeter');
-
 render(
-  <Greeter/>,
+  <h1>Boilerplate</h1>,
   document.getElementById('app')
 )

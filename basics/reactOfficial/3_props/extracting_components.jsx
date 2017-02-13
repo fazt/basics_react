@@ -1,3 +1,8 @@
+function Avatar(props) {
+  return(
+    
+  );
+}
 function Comment(props) {
   return (
     <div className="Comment">

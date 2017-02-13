@@ -1,9 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
-
-var Greeter = require('Greeter');
+import Test from './components/app.jsx';
 
 render(
-  <Greeter/>,
+  <Test/>,
   document.getElementById('app')
-)
+);
