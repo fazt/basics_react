@@ -1,36 +1,26 @@
 import React from 'react';
-import Layout from './layout.jsx';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, IndexRoute, Route, browserHistory } from 'react-router';
+
+import Layout from './Layout.jsx';
 
 // components for pages
-import Products from "./pages/products.jsx";
-import Home from "./pages/home.jsx";
-import Company from "./pages/company.jsx";
-import Item from "./pages/item.jsx";
-import Checkout from "./pages/checkout.jsx";
-import Receipt from "./pages/receipt.jsx";
+import Products from "./pages/Products.jsx";
+import Home from "./pages/Home.jsx";
+import Company from "./pages/Company.jsx";
+import Item from "./pages/Item.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import Receipt from "./pages/Receipt.jsx";
+
 
 const Routes = (
   <Router history={browserHistory}>
-    <Route handler={Layout}>
-      <Route name="home"
-        path="/"
-        handler={Home} />
-      <Route name="company"
-        path="company"
-        handler={Company} />
-      <Route name="products"
-        path="products"
-        handler={Products} />
-      <Route name="item"
-        path="item/:id"
-        handler={Item} />
-      <Route name="checkout"
-        path="checkout"
-        handler={Checkout} />
-      <Route name="receipt"
-        path="receipt"
-        handler={Receipt} />
+    <Route path="/" component={Layout}>
+      <IndexRoute component={Home}/>
+      <Route path="company" component={Company}/>
+      <Route path="products" component={Products}/>
+      <Route path="item" component={Item}/>
+      <Route path="checkout" component={Checkout}/>
+      <Route path="receipt" component={Receipt}/>
     </Route>
   </Router>
 );

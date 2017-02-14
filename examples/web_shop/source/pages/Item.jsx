@@ -1,9 +1,9 @@
 import React from "react";
 
 const Item = React.createClass ({
-  render() {
+  render: function () {
     return (
-      <div />
+      <div>checkout</div>
     );
   }
 });

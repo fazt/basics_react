@@ -15,6 +15,11 @@
 
 - to install jquery: npm i jquery --save-dev
 - to install foundation: npm i foundation --save-dev
+
+- to load sass: npm i sass-loader node-sass --save-dev
+- styles!css!sass!myfile.scss
+
+
 ## Tools
 - jsoneditoronline.org
 - jsonview - chrome extension

@@ -3,7 +3,7 @@ import React from "react";
 const Products = React.createClass ({
   render() {
     return (
-      <div />
+      <div>checkout</div>
     );
   }
 });

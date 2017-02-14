@@ -15,15 +15,20 @@ browserify.settings({
   grep: /\.jsx?$/
 });
 
-app.get('/bundle.js',browserify(__dirname +'/source/app.jsx' ));
+app.get('/bundle.js',browserify(__dirname +'/source/App.jsx' ));
 
 app.get(['*.png', '*.jpg', '*.css', '*.map'], (req, res) => {
   res.sendFile(__dirname + '/public' + req.path);
 });
 
+app.get('*.json', function (req, res) {
+  res.sendFile(__dirname+"/public/"+req.path);
+});
+
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
+
 
 app.listen(port, function() {
   browserSync({

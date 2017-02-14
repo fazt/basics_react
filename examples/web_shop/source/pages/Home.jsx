@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Row, Col, Jumbotron } from "react-bootstrap";
+import { Grid, Row, Col, Jumbotron, Button} from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from 'react-router';
 
@@ -20,7 +20,8 @@ const Home = React.createClass({
               </p>
               <p>
                 <LinkContainer to="/products">
-                  <Button bsStyle="primary"
+                  <Button
+                    bsStyle="primary"
                     to="/products">
                     View Products
                   </Button>
@@ -34,4 +35,4 @@ const Home = React.createClass({
   }
 });
 
-module.exporst = Home;
+module.exports = Home;

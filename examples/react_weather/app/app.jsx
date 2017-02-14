@@ -9,8 +9,10 @@ var Examples = require('Examples');
 
 // load foundation
 require('style!css!foundation-sites/dist/css/foundation.min.css')
-
 $(document).foundation();
+
+//Add css
+require('style!css!sass!applicationStyles');
 
 render(
   <Router history={hashHistory}>
